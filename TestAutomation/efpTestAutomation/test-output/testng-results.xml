@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="66588" started-at="2018-08-24T10:48:04Z" finished-at="2018-08-24T10:49:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="66588" started-at="2018-08-24T10:48:04Z" finished-at="2018-08-24T10:49:11Z">
+      <class name="example.TestsForChrome">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:example.TestsForChrome@f8c1ddd]" name="beforeClass" is-config="true" duration-ms="9567" started-at="2018-08-24T16:18:04Z" finished-at="2018-08-24T16:18:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:example.TestsForChrome@f8c1ddd]" name="beforeMethod" is-config="true" duration-ms="533" started-at="2018-08-24T16:18:14Z" finished-at="2018-08-24T16:18:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void example.TestsForChrome.LoginVerifyLandingPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginVerifyLandingPage()[pri:0, instance:example.TestsForChrome@f8c1ddd]" name="LoginVerifyLandingPage" duration-ms="51344" started-at="2018-08-24T16:18:14Z" finished-at="2018-08-24T16:19:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerifyLandingPage -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:example.TestsForChrome@f8c1ddd]" name="afterMethod" is-config="true" duration-ms="3110" started-at="2018-08-24T16:19:06Z" finished-at="2018-08-24T16:19:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void example.TestsForChrome.LoginVerifyLandingPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:example.TestsForChrome@f8c1ddd]" name="afterClass" is-config="true" duration-ms="1861" started-at="2018-08-24T16:19:09Z" finished-at="2018-08-24T16:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- example.TestsForChrome -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

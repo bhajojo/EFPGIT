@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+Built-By: joshibha
+Class-Path: libs/junit-4.11.jar libs/hamcrest-core-1.3.jar libs/allure
+ -maven-2.9.jar libs/slf4j-api-1.7.25.jar libs/httpclient-4.5.3.jar li
+ bs/jackson-databind-2.8.6.jar libs/jackson-annotations-2.8.0.jar libs
+ /jackson-core-2.8.6.jar libs/maven-core-3.3.9.jar libs/maven-model-3.
+ 3.9.jar libs/maven-settings-3.3.9.jar libs/maven-settings-builder-3.3
+ .9.jar libs/maven-builder-support-3.3.9.jar libs/maven-repository-met
+ adata-3.3.9.jar libs/maven-model-builder-3.3.9.jar libs/maven-aether-
+ provider-3.3.9.jar libs/aether-spi-1.0.2.v20150114.jar libs/aether-im
+ pl-1.0.2.v20150114.jar libs/aether-api-1.0.2.v20150114.jar libs/aethe
+ r-util-1.0.2.v20150114.jar libs/org.eclipse.sisu.plexus-0.3.2.jar lib
+ s/cdi-api-1.0.jar libs/jsr250-api-1.0.jar libs/org.eclipse.sisu.injec
+ t-0.3.2.jar libs/guice-4.0-no_aop.jar libs/javax.inject-1.jar libs/ao
+ palliance-1.0.jar libs/plexus-interpolation-1.21.jar libs/plexus-util
+ s-3.0.22.jar libs/plexus-classworlds-2.5.2.jar libs/plexus-component-
+ annotations-1.6.jar libs/plexus-sec-dispatcher-1.3.jar libs/plexus-ci
+ pher-1.4.jar libs/maven-reporting-impl-2.4.jar libs/maven-reporting-a
+ pi-3.0.jar libs/maven-project-2.2.1.jar libs/maven-profile-2.2.1.jar 
+ libs/maven-artifact-manager-2.2.1.jar libs/backport-util-concurrent-3
+ .1.jar libs/maven-plugin-registry-2.2.1.jar libs/plexus-container-def
+ ault-1.0-alpha-9-stable-1.jar libs/classworlds-1.1-alpha-2.jar libs/d
+ oxia-sink-api-1.6.jar libs/doxia-logging-api-1.6.jar libs/doxia-core-
+ 1.6.jar libs/xercesImpl-2.9.1.jar libs/commons-lang-2.4.jar libs/xmlu
+ nit-1.5.jar libs/doxia-site-renderer-1.6.jar libs/doxia-decoration-mo
+ del-1.6.jar libs/doxia-module-xhtml-1.6.jar libs/doxia-module-fml-1.6
+ .jar libs/plexus-i18n-1.0-beta-7.jar libs/plexus-velocity-1.1.7.jar l
+ ibs/velocity-tools-2.0.jar libs/commons-chain-1.1.jar libs/dom4j-1.1.
+ jar libs/sslext-1.2-0.jar libs/struts-core-1.3.8.jar libs/antlr-2.7.2
+ .jar libs/struts-taglib-1.3.8.jar libs/struts-tiles-1.3.8.jar libs/co
+ mmons-beanutils-1.9.3.jar libs/commons-collections-3.2.2.jar libs/zip
+ 4j-1.3.2.jar libs/commons-exec-1.3.jar libs/maven-plugin-annotations-
+ 3.2.jar libs/maven-jxr-plugin-2.5.jar libs/velocity-1.5.jar libs/oro-
+ 2.0.8.jar libs/maven-jxr-2.5.jar libs/wagon-provider-api-1.0.jar libs
+ /xml-apis-1.0.b2.jar libs/xalan-2.7.0.jar libs/allure-testng-2.6.0.ja
+ r libs/allure-descriptions-javadoc-2.6.0.jar libs/commons-io-2.5.jar 
+ libs/allure-java-commons-2.6.0.jar libs/allure2-model-api-1.0-BETA6.j
+ ar libs/allure2-model-pojo-1.0-BETA6.jar libs/tika-core-1.14.jar libs
+ /allure2-model-jackson-1.0-BETA6.jar libs/jackson-module-jaxb-annotat
+ ions-2.7.0.jar libs/aspectjrt-1.8.10.jar libs/joor-0.9.6.jar libs/ham
+ crest-all-1.3.jar libs/selenium-java-3.13.0.jar libs/selenium-api-3.1
+ 3.0.jar libs/selenium-chrome-driver-3.13.0.jar libs/selenium-edge-dri
+ ver-3.13.0.jar libs/selenium-firefox-driver-3.13.0.jar libs/selenium-
+ ie-driver-3.13.0.jar libs/selenium-opera-driver-3.13.0.jar libs/selen
+ ium-remote-driver-3.13.0.jar libs/selenium-safari-driver-3.13.0.jar l
+ ibs/selenium-support-3.13.0.jar libs/byte-buddy-1.8.3.jar libs/common
+ s-codec-1.10.jar libs/commons-logging-1.2.jar libs/gson-2.8.4.jar lib
+ s/guava-25.0-jre.jar libs/jsr305-1.3.9.jar libs/checker-compat-qual-2
+ .0.0.jar libs/error_prone_annotations-2.1.3.jar libs/j2objc-annotatio
+ ns-1.1.jar libs/animal-sniffer-annotations-1.14.jar libs/httpcore-4.4
+ .9.jar libs/okhttp-3.10.0.jar libs/okio-1.14.1.jar libs/maven-compile
+ r-plugin-3.6.0.jar libs/maven-plugin-api-3.0.jar libs/sisu-inject-ple
+ xus-1.4.2.jar libs/sisu-inject-bean-1.4.2.jar libs/sisu-guice-2.1.7-n
+ oaop.jar libs/maven-artifact-3.0.jar libs/maven-shared-utils-3.1.0.ja
+ r libs/maven-shared-incremental-1.1.jar libs/asm-6.0_ALPHA.jar libs/p
+ lexus-compiler-api-2.8.1.jar libs/plexus-compiler-manager-2.8.1.jar l
+ ibs/plexus-compiler-javac-2.8.1.jar libs/java-client-4.1.2.jar libs/c
+ ommons-validator-1.5.1.jar libs/commons-digester-1.8.1.jar libs/commo
+ ns-lang3-3.4.jar libs/cglib-nodep-3.2.4.jar libs/spring-context-4.3.2
+ .RELEASE.jar libs/spring-aop-4.3.2.RELEASE.jar libs/spring-beans-4.3.
+ 2.RELEASE.jar libs/spring-core-4.3.2.RELEASE.jar libs/spring-expressi
+ on-4.3.2.RELEASE.jar libs/aspectjweaver-1.8.9.jar libs/poi-3.9.jar
+Build-Jdk: 1.8.0_101
+Created-By: Maven Integration for Eclipse
+

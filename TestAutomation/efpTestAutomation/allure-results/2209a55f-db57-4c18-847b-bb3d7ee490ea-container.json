@@ -1,0 +1,1 @@
+{"uuid":"2209a55f-db57-4c18-847b-bb3d7ee490ea","name":"example.TestsForFirefox.afterMethod","description":"","start":1533811467791,"stop":1533811498527,"children":["c09cf8da-0371-43ae-828e-544aeb3aa2ea"],"afters":[{"name":"afterMethod","status":"passed","stage":"finished","description":"","start":1533811467796,"stop":1533811498527}]}

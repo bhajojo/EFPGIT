@@ -1,0 +1,115 @@
+package com.EFP;
+
+import java.util.Dictionary;
+//import time;
+//import win32com.client;
+import java.util.HashMap;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+
+import com.tieto.asap.*;
+
+public class LaunchApplication {
+	
+	private Reporting Reporter;
+	private WebDriver driver;
+	private HashMap<String, String> Dictionary;
+	private HashMap<String, String> Environment;
+	private CommonFunctions objCommon = new CommonFunctions();
+	
+	
+	public LaunchApplication()
+	{
+		Reporter = Global.Reporter;
+		driver = Global.webDriver;
+		Dictionary = Global.Dictionary;
+		Environment = Global.Environment;
+	}
+	
+	public String edtPassword = "id:=password";
+    public String webbtnLogin = "id:=kc-login";
+    public String pinCodeText = "id:=pin-code";
+    public String AlandsBankUserName = "id:=encapUsername";
+    public String AlandsBankUserNameText = "id:=username";
+    public String AlandsBank = "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-alandsbanken']";
+    public String NordeaBank = "xpath:=.//*[@id='kc-content']//div[@class='tupas-login__logo-nordea']";
+    public String AktiaBank = "xpath:=.//*[@id='kc-content']//div[@class='tupas-login__logo-aktia']";
+    public String AktiaBankLogo = "xpath:=//div[2]/div/div[2]/div/div/div/form/div[3]/div[1]/div";
+    public String HandlesBank= "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-handelsbanken']";
+    public String SastopankkiBank= "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-sastopankki']";
+    public String SpankkiBank= "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-spankki']";
+    public String OaspBank= "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-omasp']";
+    public String OPBank= "xpath:=.//*[@id='kc-form-login']//div[@class='tupas-login__logo-op']";
+    public String AlandsBankLoginButton = "xpath:=.//button[@name='btn_log_in']";
+    public String AlandsBankPINTANLoginButton = "xpath:=.//*[@id='PIN_TAN']//form[@name='loginForm']//div[2]/button";
+    public String AlandsBankConfirmButton = "xpath:=.//button[@name='btn_confirm']";
+    public String NordeaBankOKButton="xpath:=.//*[@id='content']//input[contains(@value,'OK')]";
+    public String NordeaBankOKButton2="xpath:=//input[contains(@value,'OK')]";
+    public String AlandsBankPinTab="xpath:=.//*[@id='external-services']//a[contains(@href,'PIN_TAN')]";
+    
+	
+	public efpHomePage openApplication1()
+	{
+		//UAT
+		//driver.get("https://nffuser1:Gr8JobWithP455Wd222!@nff-uat.se.teco.online/dist/nordea/#/authenticate/tupas");
+				
+		//Dev
+		
+		return new efpHomePage();	
+		
+	}
+	
+	public boolean openApplication()
+	{
+		driver.get("http://ubuntudev.easyfinancing.int.tds.tieto.com:8080/customerportal");
+		Reporter.fnWriteToHtmlOutput("Navigate to specified URL", "Navigation to EFP URL", "Navigated to EFP URL" , "Done");
+		//return new efpHomePage();		
+		return true;
+	}
+	
+	
+	public efpHomePage openKeyCloakApplication()
+	{
+		//Dev
+		driver.get("https://keycloak-nff-mypages-dev.cloudapps.ocp-uat2.uat.mypages.teco.1-3.se.teco.online/auth/admin/master/console/");
+		driver.manage().window().maximize();
+		//driver.get("https://nff-dev.se.teco.online/dist/nordea/#/authenticate/tupas");
+		Reporter.fnWriteToHtmlOutput("Navigate to specified URL", "Navigation to MyPages URL", "Navigated to MyPages URL" , "Done");
+		
+		driver.findElement(By.id("username")).sendKeys("keycloak");
+		driver.findElement(By.id("password")).sendKeys("12Keycloak21!");
+		driver.findElement(By.id("kc-login")).click();
+		
+		driver.findElement(By.xpath("//a[@class='ng-binding' and contains(.,'Users')]")).click();
+		driver.findElement(By.xpath("//div[@class='input-group']//input")).sendKeys("010170999R");
+		
+		//2102819988
+		
+		driver.findElement(By.id("userSearch")).click();
+		driver.findElement(By.xpath("//table/tbody/tr[1]/td[1]/a")).click();
+		driver.findElement(By.xpath("//div[1]/div[1]/div/ul/li[2]/a")).click();
+		driver.findElement(By.id("attribute-TC_ACCEPTED")).clear();
+		driver.findElement(By.id("attribute-TC_ACCEPTED")).sendKeys("false");
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("//div/div/div[1]/form/div/div/button[1]")).click();
+		
+		
+		return new efpHomePage();
+		
+	}
+	
+	public String getTitle()
+	{
+		return driver.getTitle();
+	}
+
+}

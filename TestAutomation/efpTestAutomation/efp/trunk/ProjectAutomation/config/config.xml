@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<!--  Configuration file for all Test Classes  -->
+<config>
+    <env>TEST</env>
+	<classes>
+		<class id="TestsForAppium">
+			<driver>
+				<type>appium</type>
+				<url>http://0.0.0.0:4723/wd/hub</url>
+				<capabilities>
+					<capability>
+						<name>deviceName</name>
+						<value>2bd2eca7</value>
+					</capability>
+					<capability>
+						<name>browserName</name>
+						<value>Chrome</value>
+					</capability>
+					
+				</capabilities>
+			</driver>
+		</class>
+
+		<class id="TestsForMercuryTours">
+		    <driver>
+				<type>firefox</type>
+			</driver>
+		</class>
+		<class id="TestsForRediffMoney">
+		    <driver>
+				<url>http://Money.rediff.com/</url>
+				<type>firefox</type>
+			</driver>
+		</class>
+
+		<class id="TestsForGmailCleanUp">
+		    <driver>
+				<type>firefox</type>
+			</driver>
+		</class>
+
+		<class id="TestsForFirefox">
+		    <driver>
+          		<url>http://www.seleniumeasy.com/test/</url>
+				<type>firefox</type>
+				
+		    </driver>
+		</class>
+		
+		<class id="TestsForChrome">
+		    <driver>
+          		<url>http://www.seleniumeasy.com/test/</url>
+				<type>chrome</type>				
+		    </driver>
+		</class>
+		
+		<class id="TestsForIE">
+		    <driver>
+          		<url>http://www.seleniumeasy.com/test/</url>
+				<type>IE</type>				
+		    </driver>
+		</class>
+	</classes>
+</config>

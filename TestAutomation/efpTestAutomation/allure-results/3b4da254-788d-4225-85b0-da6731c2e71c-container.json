@@ -1,0 +1,1 @@
+{"uuid":"3b4da254-788d-4225-85b0-da6731c2e71c","name":"example.TestsForFirefox.beforeMethod","description":"","start":1534149136493,"stop":1534149136613,"children":["3662a067-473f-480d-b940-a05a4f07237d"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","description":"","start":1534149136493,"stop":1534149136611}]}

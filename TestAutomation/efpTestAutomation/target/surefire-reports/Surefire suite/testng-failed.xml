@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="example.TestsForChrome">
+        <methods>
+          <include name="LoginVerifyLandingPage"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- example.TestsForChrome -->
+      <class name="example.TestsForFirefox">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="LoginVerifyLandingPage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- example.TestsForFirefox -->
+      <class name="example.TestsForIE">
+        <methods>
+          <include name="LoginVerifyLandingPage"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- example.TestsForIE -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

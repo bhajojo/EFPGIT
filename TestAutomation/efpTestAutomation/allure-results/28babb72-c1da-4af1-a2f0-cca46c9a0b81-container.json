@@ -1,0 +1,1 @@
+{"uuid":"28babb72-c1da-4af1-a2f0-cca46c9a0b81","name":"example.TestsForChrome.beforeMethod","description":"","start":1533638508239,"stop":1533638508244,"children":["1583ffc0-0ed9-4fdb-9808-6b521b0608d9"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","description":"","start":1533638508239,"stop":1533638508243}]}
